@@ -4,13 +4,15 @@ html {
     scrollbar-color: blue;
   }
 body{
-    background-color: rgb(240, 255, 204);
-    -webkit-user-select: none;
-    user-select: none;
+    background-color: rgb(22, 22, 39);
+    color: white;
 }
 .image-container {
     position: relative;
     overflow: hidden;
+}
+.li a{
+    color: white;
 }
 h5{
   font-family: "Rationale", sans-serif;
@@ -68,6 +70,7 @@ h5{
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
+    color: white;
 }
 .image-container1{
 .image-container {
@@ -81,6 +84,7 @@ h5{
     left: 0;
     width: 100%;
     height: 100%;
+    
     opacity: 0; /* Hidden by default */
     transition: opacity 0.3s ease;
     display: flex;
@@ -108,9 +112,10 @@ h5{
 
 .caption-content button {
     padding: 0.5rem 1rem;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: transparent;
+    color:black;
     border: none;
+    border: 1px solid black;
     cursor: pointer;
     font-size: 1rem;
     text-transform: uppercase;
@@ -119,8 +124,8 @@ h5{
 }
 
 .caption-content button:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: black;
+    color: white;
     border: 1px solid black;
     transform: scale(1.1);
 }
@@ -179,40 +184,3 @@ h5{
     margin-bottom: 20px;
 }
 
-.popup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    display: none;
-}
-
-.overlay:hover .popup {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.like-btn, .share-btn {
-    margin: 0 10px;
-    padding: 8px 15px;
-    background-color: #fff;
-    color: #333;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-}
-
-.like-btn:hover{
-    transform: scale(1.1);
-    background-color: #f7458f;
-    color: #ffffff;
-}
-.share-btn:hover{
-    transform: scale(1.1);
-    background-color: #166e00;
-    color: #ffffff;
-}
