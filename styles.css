@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400..900&family=Climate+Crisis&family=DM+Serif+Display:ital@0;1&family=Dorsa&family=Freeman&family=Honk&family=Lilita+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ojuju:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Radio+Canada+Big:wght@400..700&family=Rammetto+One&family=Rationale&family=Shojumaru&family=Teko:wght@700&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: bisque;
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+h5{
+    font-family: "Rationale", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+.image-container img {
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.caption {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust as needed */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Adjust padding as needed */
+    transition: bottom 0.3s ease;
+}
+
+.image-container:hover .caption {
+    bottom: 0;
+}
+.figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.figure img {
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+.figure:hover img {
+    transform: translateY(-10px);
+}
+.text-capitalize{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.image-container1{
+.image-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay:hover {
+    opacity: 1; /* Show on hover */
+}
+
+.caption-content {
+    color: #333; /* Text color */
+}
+
+.caption-content h4 {
+    font-size: 1.5rem; /* Adjust heading size */
+    margin-bottom: 0.5rem;
+}
+
+.caption-content p {
+    font-size: 1rem; /* Adjust paragraph size */
+}
+
+.caption-content button {
+    padding: 0.5rem 1rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.caption-content button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid black;
+    transform: scale(1.1);
+}
+}
+.image-container1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container1 img {
+    transition: transform 0.3s;
+}
+
+.image-container1:hover img {
+    transform: scale(1.1);
+}
+
+.caption-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    color: #000;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.image-container1:hover .caption-content {
+    transform: translateY(0);
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.caption-content {
+    margin-bottom: 20px;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+}
+
+.overlay:hover .popup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-btn, .share-btn {
+    margin: 0 10px;
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.like-btn:hover{
+    transform: scale(1.1);
+    background-color: #f7458f;
+    color: #ffffff;
+}
+.share-btn:hover{
+    transform: scale(1.1);
+    background-color: #166e00;
+    color: #ffffff;
+}

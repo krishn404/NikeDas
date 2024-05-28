@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400..900&family=Climate+Crisis&family=Dorsa&family=Freeman&family=Honk&family=Lilita+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ojuju:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Radio+Canada+Big:wght@400..700&family=Rammetto+One&family=Shojumaru&family=Teko:wght@700&display=swap");
+@font-face {
+  font-family: "custom";
+  src: url("/Mazius-Extraitalic.121a71a7.otf");
+}
+
+body {
+  background-color: #bec3c5;
+  font-family: "Merriweather", serif;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000;
+  background-color: #f0f0f0;
+}
+
+.navbar-brand {
+  font-family: "custom", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 15, "SHLN" 50;
+}
+
+.collection-container {
+  margin-top: 80px;
+  padding-top: 5%;
+}
+
+.collection-subheading {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.collection-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  font-size: 4rem;
+  padding: 0.5rem 1rem;
+  font-family: "Dorsa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.collection-subheading {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  aspect-ratio: auto 492 / 739;
+}
+
+.image-container img {
+  transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay-content {
+  color: white;
+  font-size: 20px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.overlay .share-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.overlay .share-btn:hover {
+  background-color: #555;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    text-align: center;
+  }
+
+  .collection-heading {
+    font-size: 2.5rem;
+  }
+
+  .collection-subheading {
+    font-size: 1rem;
+  }
+}
